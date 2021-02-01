@@ -1,0 +1,13 @@
+<!doctype html>
+<html>
+<h1> Software Testing Help</h1><p> 
+ 
+Hello World!, from Software Testing Help. </p>
+{% for item in greetings %}
+          {% if "Morning" in item %}
+      <i><p><b>{{item}}</b></p></i>
+    {% else %}
+       <p>{{item}}</p>
+    {% endif %}
+{% endfor %}
+</html>

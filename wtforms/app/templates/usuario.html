@@ -1,0 +1,14 @@
+{% extends "appbuilder/general/model/add.html" %}
+
+{% block add_form %}
+    <div>
+        <label>Tipo de Entidade</label>
+        <input type="radio" id="entidade" name="entidade" value="cliente">
+        <label for="">Cliente</label>
+        <input type="radio" id="entidade" name="entidade" value="fornecedor">
+        <label for="">Fornecedor</label>
+    </div>
+    <form method="POST">
+       {{ super()}}
+    </form>
+{% endblock %}
